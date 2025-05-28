@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="health_permissions">
+        <!-- Add all Health Connect permissions your app needs to read -->
+        <item>android.permission.health.READ_STEPS</item>
+        <item>android.permission.health.READ_HEART_RATE</item>
+        <!-- Add other READ permissions, e.g., READ_DISTANCE, READ_SLEEP, etc. -->
+
+        <!-- Add all Health Connect permissions your app needs to write -->
+        <item>android.permission.health.WRITE_STEPS</item>
+        <item>android.permission.health.WRITE_HEART_RATE</item>
+        <!-- Add other WRITE permissions, e.g., WRITE_DISTANCE, WRITE_SLEEP, etc. -->
+
+        <!-- Example: If you only need to read steps, it would be just: -->
+        <!-- <item>android.permission.health.READ_STEPS</item> -->
+    </string-array>
+</resources>
+
+

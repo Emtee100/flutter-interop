@@ -1,0 +1,30 @@
+android_sdk_config:
+  add_gradle_deps: true
+  add_gradle_sources: true
+
+
+
+suspend_fun_to_async: true
+
+output:
+  dart:
+    path: lib/example.dart
+    structure: single_file
+
+source_path:
+  - 'android/app/src/main/java'
+
+classes:
+  - 'androidx.health.connect.client.HealthConnectClient'
+  - 'androidx.health.connect.client.PermissionController'
+  - 'android.content.Context'
+  - 'androidx.health.connect.client.request.AggregateRequest'
+  - 'androidx.health.connect.client.time.TimeRangeFilter'
+  - 'androidx.health.connect.client.aggregate.AggregationResult'
+  - 'androidx.health.connect.client.aggregate.AggregateMetric'
+  - 'androidx.health.connect.client.records.StepsRecord'
+  - 'java.time.Instant'
+
+maven_downloads:
+  source_deps:
+    - 'org.jetbrains.kotlin:kotlin-stdlib:2.1.10'

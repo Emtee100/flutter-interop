@@ -1,0 +1,20 @@
+// This file is to help tools like jnigen that might expect a Groovy-based build.gradle
+// at the Android project root. Your main Android project configuration
+// remains in build.gradle.kts.
+
+try {
+    apply from: 'build.gradle.kts'
+} catch (e) {
+    e
+}
+
+//dependencies {
+//    // ... other dependencies
+//    implementation "androidx.health.connect:connect-client:1.1.0-rc01" // Or the latest stable/desired version
+//}
+
+// If jnigen or other tools need to inject Groovy-specific configurations
+// at this root level (e.g., into an 'allprojects' or 'subprojects' block),
+// they might attempt to do so here.
+// However, most modern tools and jnigen's dependency/source additions
+// typically target the app-level build.gradle (e.g., android/app/build.gradle).
